@@ -1,0 +1,11 @@
+body > .grid {
+    height: 100%;
+}
+
+.column{
+    width: 450px !important;
+}
+
+#loginForm{
+    background-color: white !important;
+}
