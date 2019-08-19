@@ -6,7 +6,7 @@ const Auth = () => {
         <div style={{marginLeft:'5px'}}>
             <div className="ui small basic icon buttons">
                 <Link to="/login" className="ui button"><i className="sign-in icon"></i></Link>  
-                <button className="ui button"><i className="registered icon"></i></button>  
+                <Link to="/register" className="ui button"><i className="registered icon"></i></Link>  
             </div>
         </div>    
     );

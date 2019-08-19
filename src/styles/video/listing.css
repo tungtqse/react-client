@@ -1,0 +1,13 @@
+.video-thumbail{
+    min-height: 180px;
+    max-height: 215px;
+}
+
+.image{
+    height: 215px;
+}
+
+.ui .star .rating :hover{
+    background-color: #cce2ff;
+    color: rgba(0,0,0,.87);
+}
