@@ -9,3 +9,7 @@ body > .grid {
 #loginForm{
     background-color: white !important;
 }
+
+h2{
+    height: 25px !important;
+}

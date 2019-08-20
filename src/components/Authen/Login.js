@@ -2,12 +2,12 @@ import React from 'react';
 import {connect} from 'react-redux';
 import LoginModal from './LoginModal';
 import history from '../../history';
-import {signIn} from '../../actions/authen';
+import {logIn} from '../../actions/authen';
 
 class Login extends React.Component{
   
     onSubmit = (formValues) => {        
-        this.props.signIn(formValues);
+        this.props.logIn(formValues);
     }
 
     render(){
@@ -22,4 +22,4 @@ class Login extends React.Component{
     }
 }
 
-export default connect(null, {signIn})(Login);
+export default connect(null, {logIn})(Login);

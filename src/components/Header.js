@@ -21,6 +21,9 @@ const Header = () => {
             <Link to="/" className="item">
                 Producer
             </Link>
+            <Link to="/image/upload" className="item">
+                Image
+            </Link>
             <div className="right menu">
                 <Search />        
                 <Auth />                  

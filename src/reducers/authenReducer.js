@@ -1,7 +1,7 @@
 import {SIGN_IN, SIGN_OUT, REGISTER} from '../common/actionType';
 
 const INTIAL_STATE = {
-    isSignedIn : null,
+    isSignedIn : false,
     token: null,
     message : null,
     isSuccessful : null
@@ -9,7 +9,7 @@ const INTIAL_STATE = {
 
 export default (state = INTIAL_STATE, action) => {
     switch(action.type){
-        case SIGN_IN : { 
+        case SIGN_IN : {
             const {id_token} = action.payload;
 
             if(!id_token){
@@ -17,9 +17,9 @@ export default (state = INTIAL_STATE, action) => {
             }
 
             return {...state, isSignedIn : true, token : id_token};
-        }
+        }        
         case SIGN_OUT : {
-            return {...state, isSignedIn : false, token : null};
+            return {...state, isSignedIn : false, token : null, message : null, isSuccessful : null};
         }
         case REGISTER : {
             const {IsSuccessful, Messages} = action.payload;

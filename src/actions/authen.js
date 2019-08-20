@@ -2,7 +2,7 @@ import videoApi from '../apis/videoApi';
 import {SIGN_IN, SIGN_OUT, REGISTER} from '../common/actionType';
 import history from '../history';
 
-export const signIn = (formValues) => {
+export const logIn = (formValues) => {
 
     return async (dispatch) => {        
         const response = await videoApi.post(`/account/login/`,formValues);
@@ -12,7 +12,7 @@ export const signIn = (formValues) => {
     }   
 };
 
-export const signOut = () => {
+export const logOut = () => {
     return {
         type: SIGN_OUT
     }
